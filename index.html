@@ -12,6 +12,8 @@
         <script src="js/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
         <!-- Javascript -->
         <script type="text/javascript" src="js/main.js"></script>
+        <!-- Moment Js -->
+        <script type="text/javascript" src="js/moment-locals.js"></script>
     </head>
     <body>
         <section id="global">
@@ -36,31 +38,12 @@
                 <div><img src="img/rojo.jpg" title="Rojo"></div>
                 <div><img src="img/cielo.jpg" title="Cielo"></div>
               </div>
-          
+
 
             <!-- Content -->
             <section id="content">
                 <div id="posts">
-                    <article class="post">
-                        <h2>Título del artículo</h2>
-                        <span class="date">Fecha de publicación</span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cupiditate eius eum accusantium ipsam pariatur, vitae molestias voluptas. Officiis at, fuga a similique modi, nemo reprehenderit porro laudantium debitis, voluptas minima laboriosam totam natus aut. Nulla id accusantium voluptatem maxime. Quia praesentium, distinctio sit fugiat. Delectus accusamus ad aspernatur mollitia?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cupiditate eius eum accusantium ipsam pariatur, vitae molestias voluptas. Officiis at, fuga a similique modi, nemo reprehenderit porro laudantium debitis, voluptas minima laboriosam totam natus aut. Nulla id accusantium voluptatem maxime. Quia praesentium, distinctio sit fugiat. Delectus accusamus ad aspernatur mollitia?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cupiditate eius eum accusantium ipsam pariatur, vitae molestias voluptas. Officiis at, fuga a similique modi, nemo reprehenderit porro laudantium debitis, voluptas minima laboriosam totam natus aut. Nulla id accusantium voluptatem maxime. Quia praesentium, distinctio sit fugiat. Delectus accusamus ad aspernatur mollitia?
-                        </p>
-                        <a href="#" class="button-more">Leer más...</a>
-                    </article>
-                    <article class="post">
-                        <h2>Título del artículo</h2>
-                        <span class="date">Fecha de publicación</span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cupiditate eius eum accusantium ipsam pariatur, vitae molestias voluptas. Officiis at, fuga a similique modi, nemo reprehenderit porro laudantium debitis, voluptas minima laboriosam totam natus aut. Nulla id accusantium voluptatem maxime. Quia praesentium, distinctio sit fugiat. Delectus accusamus ad aspernatur mollitia?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cupiditate eius eum accusantium ipsam pariatur, vitae molestias voluptas. Officiis at, fuga a similique modi, nemo reprehenderit porro laudantium debitis, voluptas minima laboriosam totam natus aut. Nulla id accusantium voluptatem maxime. Quia praesentium, distinctio sit fugiat. Delectus accusamus ad aspernatur mollitia?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cupiditate eius eum accusantium ipsam pariatur, vitae molestias voluptas. Officiis at, fuga a similique modi, nemo reprehenderit porro laudantium debitis, voluptas minima laboriosam totam natus aut. Nulla id accusantium voluptatem maxime. Quia praesentium, distinctio sit fugiat. Delectus accusamus ad aspernatur mollitia?
-                        </p>
-                        <a href="#" class="button-more">Leer más...</a>
-                    </article>
+                    <!-- Json Posts -->
                 </div>
                 <aside id="sidebar">
                     <div id="about">
@@ -74,7 +57,7 @@
                     <div id="login">
                         <h4><span>Identificate</span></h4>
                         <form action="">
-                        	<label for="name">Nombre</label>
+                        	<label for="name">Nombre</label><br />
                         	<input type="text" name="name" /><br />
 
                         	<label for="email">Email</label><br />
