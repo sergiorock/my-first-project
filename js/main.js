@@ -1,13 +1,21 @@
 $(document).ready(function(){
-  moment.locale('es');
+
+  //Busca en la barra de dirección. -1 significa que no encuentra el string
+  //Entonces en este caso si index es distinto a NO encontrado (encontrado) carga el contenido.
+  if (window.location.href.indexOf("index") != -1){
   //Slider
   $('.bxslider').bxSlider({
    mode: 'fade',
    slideWidth: 1300,
    responsive: true
- });
+  })
+  };
 
+ //Busca en la barra de dirección. -1 significa que no encuentra el string
+ //Entonces en este caso si index es distinto a NO encontrado (encontrado) carga el contenido.
+ if (window.location.href.indexOf("index") != -1){
   //Posts
+  moment.locale('es');
   var posts = [
     {
       title: 'Test Article 1',
@@ -36,6 +44,7 @@ $(document).ready(function(){
     },
   ];
 
+
   posts.forEach((item, index) => {
     var post = `
     <article class="post">
@@ -47,6 +56,7 @@ $(document).ready(function(){
     `;
     $('#posts').append(post);
   });
+};
 
   //selector theme
   var theme = $('#theme');
@@ -91,5 +101,9 @@ $(document).ready(function(){
       location.reload();
     });
   };
+
+  if (window.location.href.indexOf("about") != -1){
+    $('#acordeon').accordion();
+  }
 
 });

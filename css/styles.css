@@ -63,9 +63,10 @@
 	padding: 7px;
 }
 
-.post h2 {
+h2 {
 	font-size: 30px;
 	color: #333;
+	font-family: Helvetica, Arial;
 }
 
 .post .date {
@@ -96,6 +97,7 @@
 	font-family: Helvetica, Arial;
 	width: 31%;
 	float: right;
+	margin-top: -35px;
 }
 
 #sidebar h4 {
@@ -195,4 +197,16 @@ footer {
 	text-decoration: none;
 	display: block;
 	float: right;
+}
+
+#content {
+	min-height: 800px;
+}
+#box {
+	width: 60%;
+	float: left;
+}
+
+#acordeon {
+	margin-top: 20px;
 }

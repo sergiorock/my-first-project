@@ -9,13 +9,13 @@
         <link id="theme" rel="stylesheet" href="css/green.css">
         <!-- JQuery -->
         <script src="js/jquery.js"></script>
-        <!-- Slider -->
-        <link rel="stylesheet" href="js/bxslider-4-4.2.12/dist/jquery.bxslider.css">
-        <script src="js/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
         <!-- Javascript -->
         <script type="text/javascript" src="js/main.js"></script>
-        <!-- Moment Js -->
-        <script type="text/javascript" src="js/moment-locals.js"></script>
+        <!-- JQuery UI -->
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css" />
+      	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+      	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+        <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     </head>
     <body>
       <div id="selector-theme" class="theme">
@@ -40,19 +40,32 @@
                     </ul>
                 </nav>
             </header>
-            <!-- Slider -->
-
-              <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="Leaves"></div>
-                <div><img src="img/rojo.jpg" title="Red"></div>
-                <div><img src="img/cielo.jpg" title="Sky"></div>
-              </div>
-
 
             <!-- Content -->
             <section id="content">
-                <div id="posts">
-                    <!-- Json Posts -->
+                <div id="box">
+                    <!-- Load acordeon -->
+                    <h2>Sobre mi</h2>
+                    <div id="acordeon">
+                      <h3>Quienes somos?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestias placeat minima, fugit esse, cupiditate culpa cumque tenetur neque dolore voluptatem. Explicabo, libero sapiente itaque. Delectus nobis natus facere ipsa, saepe quasi unde accusantium velit error eius ratione illo. Ratione voluptatem, sit excepturi tempore numquam possimus nostrum ipsum? Neque, nulla?
+                        </p>
+                      </div>
+
+                      <h3>Nuestros servicios</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestias placeat minima, fugit esse, cupiditate culpa cumque tenetur neque dolore voluptatem. Explicabo, libero sapiente itaque. Delectus nobis natus facere ipsa, saepe quasi unde accusantium velit error eius ratione illo. Ratione voluptatem, sit excepturi tempore numquam possimus nostrum ipsum? Neque, nulla?
+                        </p>
+                      </div>
+
+                      <h3>Nuestros clientes</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore molestias placeat minima, fugit esse, cupiditate culpa cumque tenetur neque dolore voluptatem. Explicabo, libero sapiente itaque. Delectus nobis natus facere ipsa, saepe quasi unde accusantium velit error eius ratione illo. Ratione voluptatem, sit excepturi tempore numquam possimus nostrum ipsum? Neque, nulla?
+                        </p>
+                      </div>
+                    </div>
+
                 </div>
                 <aside id="sidebar">
                     <div id="about">
@@ -90,11 +103,4 @@
         </footer>
     </body>
 
-
-    <script>
-      // Initialize the slider
-      $(document).ready(function(){
-        $('.slider').bxSlider();
-      });
-    </script>
 </html>
